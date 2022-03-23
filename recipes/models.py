@@ -13,6 +13,7 @@ class Recipe(models.Model):
     preparation_time = models.CharField(max_length=30 , default=0)
     cooking_time = models.CharField(max_length=30, default=0)
     total_time = models.CharField(max_length=30, default=0)
+    serving_size = models.CharField(max_length=30, default=0)
     ingredients = models.TextField(blank=True)
     instructions = models.TextField(blank=True)
     featured_image = CloudinaryField('image', default='placeholder')

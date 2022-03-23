@@ -35,3 +35,16 @@ body {
     font-size: 70px;
     color: #B28649;
 }
+
+/* Recipe.html */
+
+.recipe-title {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.recipe-text {
+    text-align: center;
+    font-size: 25px;
+}

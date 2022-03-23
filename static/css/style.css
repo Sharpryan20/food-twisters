@@ -39,6 +39,32 @@ body {
 
 /* Index.html CSS */
 
+.hero-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-title h1 {
+    font-size: 80px;
+}
+
+.hero-title h2 {
+    font-family: 'Inspiration',
+    sans-serif;
+    font-size: 60px;
+    color: #B28649;
+    font-weight: bold;
+}
+
 /* Recipe.html */
 
 .recipe-title {

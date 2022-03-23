@@ -1,6 +1,7 @@
 /* Google font imports */
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Kavoon&display=swap');
 
 body {
     height: 100%;
@@ -58,10 +59,40 @@ body {
     color: #526169;
 }
 
+.card-title {
+    font-family: 'kavoon', sans-serif;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
 .card-title, .card-text {
     color: #5D737E;
 }
 
 .card-body {
-    border: 1px solid #1F1A38;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: none;
+}
+
+/* Footer CSS */
+
+.footer {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    background-color: #7B506F;
+    color: #DBCDC6;
+    padding: 6px;
+}
+
+.footer-text {
+    margin: 5px;
+}
+
+.fab {
+    text-decoration: none;
+    color: #DBCDC6;
 }

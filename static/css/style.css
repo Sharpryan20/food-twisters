@@ -83,8 +83,8 @@ body {
     text-align: center;
     font-size: 20px;
     position: relative;
-    background-color: #7B506F;
-    color: #DBCDC6;
+    background-color: #465362;
+    color: #B28649;
     padding: 6px;
 }
 
@@ -94,5 +94,5 @@ body {
 
 .fab {
     text-decoration: none;
-    color: #DBCDC6;
+    color: #B28649;
 }

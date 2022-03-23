@@ -30,3 +30,7 @@ class RecipeDetail(View):
             }
         )
 
+def index(request):
+    """ Return homepage """
+    return render(request, 'index.html')
+

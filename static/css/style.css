@@ -48,3 +48,20 @@ body {
     text-align: center;
     font-size: 25px;
 }
+
+.recipe-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.recipe-link:hover {
+    color: #526169;
+}
+
+.card-title, .card-text {
+    color: #5D737E;
+}
+
+.card-body {
+    border: 1px solid #1F1A38;
+}

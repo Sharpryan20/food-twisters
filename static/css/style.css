@@ -105,6 +105,21 @@ body {
     text-decoration: none;
 }
 
+.contact-title {
+    font-family: 'Inspiration',
+    sans-serif;
+    color: #5D737E;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.contact-box {
+    background-color: #B28649;
+    padding: 20px;
+    margin: 20px;
+}
+
 /* Recipe.html */
 
 .recipe-title {

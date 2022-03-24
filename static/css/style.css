@@ -69,6 +69,17 @@ body {
     width: 80%;
 }
 
+.index-title {
+    font-size: 60px;
+    text-align: center;
+}
+
+.index-title h2 {
+    font-family: 'Inspiration', sans-serif;
+    color: #B28649;
+    font-weight: bold;
+}
+
 .index-link {
     position: absolute;
     top: 50%;

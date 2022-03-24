@@ -80,6 +80,11 @@ body {
     font-weight: bold;
 }
 
+.index-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .index-link {
     position: absolute;
     top: 50%;

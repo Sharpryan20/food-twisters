@@ -167,6 +167,12 @@ body {
 
 .card-title {
     font-family: 'kavoon', sans-serif;
+    text-align: center;
+}
+
+.image-flash {
+    text-align: center;
+    color: #AE8141;
 }
 
 .card-text {
@@ -174,13 +180,21 @@ body {
 }
 
 .card-title, .card-text {
-    color: #5D737E;
+    color: #98733E;
 }
 
 .card-body {
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: none;
+}
+
+.post-banner {
+    background-color: #2A323C;
+}
+
+.recipe-info {
+    margin: 3px;
 }
 
 /* Footer CSS */

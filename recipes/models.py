@@ -4,8 +4,14 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+class Category(models.Model):
+    "Django Model of category database"
+    title = models.CharField(max_length=250, blank = True)
+    slug = models.SlugField(max_length=250, default=True)
+    category_image = models.ImageField(upload_to="categories", blank=True)
+
 class Recipe(models.Model):
-    """ Django Modle of recipe database """
+    """ Django Model of recipe database """
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=250, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="recipe_posts")

@@ -139,6 +139,10 @@ body {
     color: #2A323C;
 }
 
+.map-box {
+    text-align: center;
+}
+
 /* Recipe.html */
 
 .recipe-title {

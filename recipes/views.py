@@ -36,3 +36,7 @@ class Index(View):
         """ Return homepage """
         return render(request, 'index.html')
 
+class CategoryList(generic.ListView):
+    model = Category
+    queryset = Category.objects.all()
+    template_name = 'category.html'

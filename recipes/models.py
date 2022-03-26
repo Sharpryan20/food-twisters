@@ -9,6 +9,12 @@ class Category(models.Model):
     title = models.CharField(max_length=250, blank = True)
     slug = models.SlugField(max_length=250, default=True)
     category_image = models.ImageField(upload_to="categories", blank=True)
+    
+    class Meta: 
+        verbose_name_plural = "categories"
+    
+    def __str__(self):
+        return self.name
 
 class Recipe(models.Model):
     """ Django Model of recipe database """

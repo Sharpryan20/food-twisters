@@ -4,6 +4,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Category(models.Model):
     "Django Model of category database"
     title = models.CharField(max_length=250, unique=True)
@@ -15,6 +16,7 @@ class Category(models.Model):
     
     def __str__(self):
         return self.title
+
 
 class Recipe(models.Model):
     """ Django Model of recipe database """

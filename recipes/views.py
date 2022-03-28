@@ -30,11 +30,17 @@ class RecipeDetail(View):
             }
         )
 
-class Index(View):
 
-    def get(self, request):
-        """ Return homepage """
-        return render(request, 'index.html')
+# class Index(View):
+
+#     def get(self, request):
+#         """ Return homepage """
+#         return render(request, 'index.html')
+
+
+def index(request):
+    return render(request, "index.html")
+
 
 class CategoryList(generic.ListView):
     model = Category

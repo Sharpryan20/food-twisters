@@ -197,6 +197,15 @@ body {
     margin: 3px;
 }
 
+/* Recipe Detail CSS */
+
+.detail-title {
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #98733E;
+    font-size: 50px;
+}
+
 /* Footer CSS */
 
 .footer {

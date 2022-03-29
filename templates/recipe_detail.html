@@ -8,6 +8,18 @@
         <div class="col-12 mt-3 left">
             <class class="row">
                 <h1 class="detail-title">{{ recipe.title }}</h1>
+                <div class="col-sm-12 col-md-6">
+                    <div class="detail-image-box mb-4">
+                        <img class="card-img-top detail-image" src=" {{ recipe.featured_image.url }}">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="detail-times">
+                        <h5> Prepation time: {{ recipe.preparation_time }}</h5>
+                        <h5> Cooking time: {{ recipe.cooking_time }} </h5>
+                        <h5> Total time: {{ recipe.total_time }} </h5>
+                    </div>
+                </div>
             </class>
         </div>
     </div>

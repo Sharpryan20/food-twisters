@@ -11,13 +11,18 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="detail-image-box mb-4">
                         <img class="card-img-top detail-image" src=" {{ recipe.featured_image.url }}">
+                        <p class="detail-image-text">
+                            Created by: {{ recipe.author }}
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div class="detail-times">
-                        <h5> Prepation time: {{ recipe.preparation_time }}</h5>
-                        <h5> Cooking time: {{ recipe.cooking_time }} </h5>
-                        <h5> Total time: {{ recipe.total_time }} </h5>
+                    <div class="recipe-info">
+                        <div class="detail-times">
+                            <h5> Prepation time: {{ recipe.preparation_time }}</h5>
+                            <h5> Cooking time: {{ recipe.cooking_time }} </h5>
+                            <h5> Total time: {{ recipe.total_time }} </h5>
+                        </div>
                     </div>
                 </div>
             </class>

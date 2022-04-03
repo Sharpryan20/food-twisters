@@ -211,8 +211,12 @@ body {
     margin-bottom: 20px;
 }
 
-.recipe-info {
+.recipe-detsil-info {
     background-color: #CCA061;
+}
+
+.recipe-ingredients-title {
+    text-align: center;
 }
 
 .detail-image-text {

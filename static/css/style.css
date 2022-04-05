@@ -211,11 +211,11 @@ body {
     margin-bottom: 20px;
 }
 
-.recipe-detail-info {
-    background-color: #CCA061;
+.detail-times {
+    margin-top: 10px;
 }
 
-.recipe-ingredients-title {
+.recipe-ingredients-title, .recipe-instructions-title {
     text-align: center;
     font-size: 40px;
     font-family: 'kavoon',

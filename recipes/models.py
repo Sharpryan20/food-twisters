@@ -24,7 +24,7 @@ class Recipe(models.Model):
     slug = models.SlugField(max_length=250, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="recipe_posts")
     updated_on = models.DateTimeField(auto_now=True)
-    preparation_time = models.CharField(max_length=30 , default=0)
+    preparation_time = models.CharField(max_length=30, default=0)
     cooking_time = models.CharField(max_length=30, default=0)
     total_time = models.CharField(max_length=30, default=0)
     serving_size = models.CharField(max_length=30, default=0)

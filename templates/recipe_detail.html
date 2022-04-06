@@ -19,18 +19,22 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="recipe-detail-info">
                         <div class="detail-times">
-                            <h5> Prepation time: {{ recipe.preparation_time }}</h5>
-                            <h5> Cooking time: {{ recipe.cooking_time }} </h5>
-                            <h5> Total time: {{ recipe.total_time }} </h5>
+                            <h4 class="recipe-time-title">Preparation</h3>
+                            <h5 class="recipe-time"> Prepation time: {{ recipe.preparation_time }}</h5>
+                            <h5 class="recipe-time"> Cooking time: {{ recipe.cooking_time }} </h5>
+                            <h5 class="recipe-time"> Total time: {{ recipe.total_time }} </h5>
                         </div>
+                        <hr>
                         <div class="recipe-titles">
                             <h4 class="recipe-ingredients-title">Ingredients</h4>
                             <p class="recipe-ingredients">{{ recipe.ingredients|safe }}</p>
                         </div>
+                        <hr>
                         <div>
                             <h4 class="recipe-instructions-title">Instructions</h4>
                             <p class="recipe-instructions">{{ recipe.instructions|safe }}</p>
                         </div>
+                        <hr>
                     </div>
                 </div>
             </class>

@@ -213,15 +213,20 @@ body {
     margin-bottom: 20px;
 }
 
-.detail-times {
-    margin-top: 10px;
+.recipe-time {
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.recipe-ingredients-title, .recipe-instructions-title {
+.recipe-ingredients-title,
+.recipe-instructions-title,
+.recipe-time-title {
     text-align: center;
     font-size: 40px;
     font-family: 'kavoon',
     sans-serif;
+    color: #B28649;
+    text-decoration: underline;
 }
 
 .detail-image-text {

@@ -244,6 +244,11 @@ body {
     font-family: 'Grape Nuts', sans-serif;
 }
 
+.category-link {
+    text-decoration: none;
+}
+
+
 /* Footer CSS */
 
 .footer {

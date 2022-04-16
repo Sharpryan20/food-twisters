@@ -252,6 +252,14 @@ body {
     text-decoration: none;
 }
 
+/* Login CSS */
+ .login-page {
+    text-align: center;
+ }
+
+ .login-box {
+    width: 80%;
+ }
 
 /* Footer CSS */
 

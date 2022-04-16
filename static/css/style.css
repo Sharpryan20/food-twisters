@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Kavoon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 
 body {
@@ -205,7 +206,8 @@ body {
     text-align: center;
     font-weight: bold;
     border: 2px solid #98733E;
-    font-size: 50px;
+    font-size: 90px;
+    font-family: 'Square Peg', sans-serif;
 }
 
 .detail-image {
@@ -213,14 +215,15 @@ body {
     margin-bottom: 20px;
 }
 
-.recipe-time {
+.recipe-time, .serving-portions {
     font-weight: bold;
     font-size: 25px;
 }
 
 .recipe-ingredients-title,
 .recipe-instructions-title,
-.recipe-time-title {
+.recipe-time-title,
+.serving-title {
     text-align: center;
     font-size: 40px;
     font-family: 'kavoon',

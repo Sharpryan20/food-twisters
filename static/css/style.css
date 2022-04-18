@@ -265,6 +265,12 @@ body {
      text-decoration: none;
  }
 
+ /* Logout CSS */
+
+ .logout-form {
+     text-align: center;
+ }
+
 /* Footer CSS */
 
 .footer {

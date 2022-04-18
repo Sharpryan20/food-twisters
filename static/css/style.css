@@ -261,6 +261,10 @@ body {
     width: 80%;
  }
 
+ .signup_link {
+     text-decoration: none;
+ }
+
 /* Footer CSS */
 
 .footer {

@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Kavoon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
 
 body {
@@ -262,20 +263,30 @@ body {
  }
 
  .signup_link {
-     text-decoration: none;
+    text-decoration: none;
  }
 
  /* Logout CSS */
 
  .signout-box {
-     text-align: center;
-     margin-top: 5%;
-     margin-bottom: 5%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
  }
 
  .logout-title {
-     text-align: center;
- }
+    font-size: 80px;
+    font-family: 'Orelega One',
+    sans-serif;
+    text-align: center;
+    color: #5D737E;
+}
+
+.logout-text {
+    font-size: 30px;
+    margin-top: 50%;
+}
+
 
 /* Footer CSS */
 

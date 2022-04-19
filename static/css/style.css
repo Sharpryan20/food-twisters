@@ -266,13 +266,13 @@ body {
     text-decoration: none;
  }
 
- .signout-box {
+ .signout-box, .signin-box, .singup-box {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
  }
 
- .logout-title, .login-title {
+ .logout-title, .login-title, .signup-title {
     font-size: 80px;
     font-family: 'Orelega One',
     sans-serif;
@@ -291,6 +291,11 @@ body {
  }
 
 .logout-button {
+    font-size: 25px;
+}
+
+.signup-text {
+    margin-top: 15%;
     font-size: 25px;
 }
 

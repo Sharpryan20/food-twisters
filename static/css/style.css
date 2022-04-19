@@ -283,8 +283,12 @@ body {
 }
 
 .logout-text {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 50%;
+}
+
+.logout-button {
+    font-size: 25px;
 }
 
 

@@ -40,19 +40,16 @@
                         
                         </div>
                         <h3 class="comment-title">Comments:</h3>
-                        <div class="card-body">
+                        <div class="card-body public-comments">
                             {% for comment in comments %}
-                            <div class="comments" style="padding: 10px;">
-                                <p class="font-weight-bold">
+                            <div class="comments">
+                                <p class="commented-user">
                                     <!-- The commenter's name goes here.-->
-                                    {{ comment.name }}
-                                    <span class=" text-muted font-weight-normal">
-                                        <!-- The comment's created date goes here -->
-                                        {{ comment.created_on }}
-                                    </span> wrote:
+                                    {{ comment.name }} 
                                 </p>
-                                <!-- The body of the comment goes before the | -->
-                                {{ comment.body | linebreaks }}
+                                <p>
+                                    {{ comment.body | linebreaks }}
+                                </p>
                             </div>
                             <!-- for loop ends here -->
                             {% endfor %}

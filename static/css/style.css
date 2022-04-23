@@ -273,6 +273,18 @@ body {
     color: white;
 }
 
+.public-comments {
+    padding: 5px;
+    text-align: center;
+}
+
+.commented-user {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #AE8141;
+}
+
 /* Category CSS */
 
 .category-title {

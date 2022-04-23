@@ -218,15 +218,23 @@ body {
 
 .recipe-time, .serving-portions {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .recipe-ingredients-title,
-.recipe-instructions-title,
+.recipe-instructions-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'kavoon',
+    sans-serif;
+    color: #B28649;
+    text-decoration: underline;
+}
+
 .recipe-time-title,
 .serving-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'kavoon',
     sans-serif;
     color: #B28649;

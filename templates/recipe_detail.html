@@ -17,44 +17,46 @@
                             Uploaded by: {{ recipe.author }}
                         </p>
                     </div>
-                    <div class="recipe-comment">
-
-                        {% if commented %}
-                        <div class="alert alert-success" role="alert">
-                            Your comment has been published!
-                        </div>
-                        {% else %}
-
-                        {% if user.is_authenticated %}
+                    <div class="comment-section">
+                        <div class="recipe-comment">
                         
-                        <h3 class="comment-title">Your comment here:</h3>
-                        <p>Logged in as {{ user.username }}</p>
-                        <form method="post" style="margin-top: 1.3em;">
-                            {{ comment_form | crispy }}
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                        </form>
-                        {% endif %}
-                        {% endif %}
-
-                    </div>
-                    <h3 class="comment-title">Comments:</h3>
-                    <div class="card-body">
-                        {% for comment in comments %}
-                        <div class="comments" style="padding: 10px;">
-                            <p class="font-weight-bold">
-                                <!-- The commenter's name goes here.-->
-                                {{ comment.name }}
-                                <span class=" text-muted font-weight-normal">
-                                    <!-- The comment's created date goes here -->
-                                    {{ comment.created_on }}
-                                </span> wrote:
-                            </p>
-                            <!-- The body of the comment goes before the | -->
-                            {{ comment.body | linebreaks }}
+                            {% if commented %}
+                            <div class="alert alert-success" role="alert">
+                                Your comment has been published!
+                            </div>
+                            {% else %}
+                        
+                            {% if user.is_authenticated %}
+                        
+                            <h3 class="comment-title">Your comment here:</h3>
+                            <p class="comment-user">User: {{ user.username }}</p>
+                            <form method="post" style="margin-top: 1.3em;">
+                                {{ comment_form | crispy }}
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                            </form>
+                            {% endif %}
+                            {% endif %}
+                        
                         </div>
-                        <!-- for loop ends here -->
-                        {% endfor %}
+                        <h3 class="comment-title">Comments:</h3>
+                        <div class="card-body">
+                            {% for comment in comments %}
+                            <div class="comments" style="padding: 10px;">
+                                <p class="font-weight-bold">
+                                    <!-- The commenter's name goes here.-->
+                                    {{ comment.name }}
+                                    <span class=" text-muted font-weight-normal">
+                                        <!-- The comment's created date goes here -->
+                                        {{ comment.created_on }}
+                                    </span> wrote:
+                                </p>
+                                <!-- The body of the comment goes before the | -->
+                                {{ comment.body | linebreaks }}
+                            </div>
+                            <!-- for loop ends here -->
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">

@@ -252,6 +252,15 @@ body {
     font-size: 35px;
 }
 
+.comment-user {
+    font-size: 18px;
+}
+
+.comment-section {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
 /* Category CSS */
 
 .category-title {

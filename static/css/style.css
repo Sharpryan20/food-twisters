@@ -261,6 +261,18 @@ body {
     margin-bottom: 15px;
 }
 
+.comment-submit {
+    border: 1px solid #465362;
+    padding: 2px;
+    margin: 4px;
+    font-size: 15px;
+}
+
+.comment-submit:hover {
+    background-color: #465362;
+    color: white;
+}
+
 /* Category CSS */
 
 .category-title {

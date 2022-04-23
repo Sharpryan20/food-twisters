@@ -27,8 +27,8 @@
 
                         {% if user.is_authenticated %}
                         
-                        <h3>Leave a comment:</h3>
-                        <p>Posting as: {{ user.username }}</p>
+                        <h3 class="comment-title">Your comment here:</h3>
+                        <p>Logged in as {{ user.username }}</p>
                         <form method="post" style="margin-top: 1.3em;">
                             {{ comment_form | crispy }}
                             {% csrf_token %}
@@ -38,7 +38,7 @@
                         {% endif %}
 
                     </div>
-                    <h3>Comments:</h3>
+                    <h3 class="comment-title">Comments:</h3>
                     <div class="card-body">
                         {% for comment in comments %}
                         <div class="comments" style="padding: 10px;">

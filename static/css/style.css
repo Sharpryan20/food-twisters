@@ -236,14 +236,20 @@ body {
 }
 
 .card-upload {
-    border: 2px solid #AE8141;
+    border: 2px solid #98733E;
 }
 
 .detail-image-text {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     font-size: 30px;
-    color: #526169;
+    color: #465362;
+}
+
+.comment-title {
+    font-weight: 600;
+    color: #465362;
+    font-size: 35px;
 }
 
 /* Category CSS */

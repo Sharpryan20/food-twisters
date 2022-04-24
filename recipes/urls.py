@@ -13,5 +13,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('post/', views.RecipeList.as_view(), name='post'),
     path('category/', views.CategoryList.as_view(), name='category'),
+    path('category_recipe/<slug:slug>', views.CategoryList.as_view(), name='category_recipe'),
     path('<slug:slug>/', views.RecipeDetail.as_view(), name='recipe_detail'),
 ]

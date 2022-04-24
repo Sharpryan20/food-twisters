@@ -22,6 +22,7 @@ class Recipe(models.Model):
     """ Django Model of recipe database """
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=250, unique=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="recipe_posts")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="recipe_posts")
     updated_on = models.DateTimeField(auto_now=True)
     preparation_time = models.CharField(max_length=30, default=0)

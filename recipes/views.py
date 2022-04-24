@@ -80,3 +80,18 @@ class CategoryList(generic.ListView):
     model = Category
     queryset = Category.objects.all()
     template_name = 'category.html'
+
+class CategoryRecipe(View):
+    def get(self, request, slug, *args, **kwargs):
+        category = get_object_or_404(Category, slug=slug)
+        queryset = Recipe.objects.filter(public=True, category__slug=slug).order_by('-created_on')
+        context = {
+            'recipe_list': queryset,
+            'category': category
+            }
+
+        return render(
+            request,
+            'category_recipe.html',
+            context
+        )

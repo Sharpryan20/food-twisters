@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 from .models import Recipe, Category
 from .forms import CommentForm
 
@@ -96,3 +97,14 @@ class CategoryRecipe(View):
             'category_recipe.html',
             context
         )
+
+
+class RecipeLike(View):
+
+    def post(self, request, slug):
+        post = get_object_or_404(Recipe, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)

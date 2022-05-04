@@ -286,6 +286,11 @@ body {
     color: #AE8141;
 }
 
+.recipe_like {
+    font-size: 20px;
+    text-align: right;
+}
+
 /* Category CSS */
 
 .category-title {

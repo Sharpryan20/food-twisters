@@ -16,26 +16,28 @@
                         <p class="detail-image-text card-upload">
                             Uploaded by: {{ recipe.author }}
                         </p>
-                        {% if user.is_authenticated %}
-                        <form action="{% url 'recipe_like' recipe.slug %}" class="d-inline" method="POST">
-                            {% csrf_token %}
-                            {% if liked %}
-                        
-                            <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
-                                    class="fas fa-heart"></i></button>
-                        
+                        <div class="recipe_like">
+                            {% if user.is_authenticated %}
+                            <form action="{% url 'recipe_like' recipe.slug %}" class="d-inline" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
+                            
+                                <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
+                                        class="fas fa-heart"></i></button>
+                            
+                                {% else %}
+                            
+                                <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
+                            
+                                {% endif %}
+                            </form>
                             {% else %}
-                        
-                            <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
-                                    class="far fa-heart"></i></button>
-                        
+                            
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
-                        </form>
-                        {% else %}
-                        
-                        <span class="text-secondary"><i class="far fa-heart"></i></span>
-                        {% endif %}
-                        <span class="text-seconday"> {{ recipe.number_of_likes }}</span>
+                            <span class="text-seconday"> {{ recipe.number_of_likes }}</span>
+                        </div>
                     </div>
                     <div class="comment-section">
                         <div class="recipe-comment">

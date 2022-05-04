@@ -15,4 +15,5 @@ urlpatterns = [
     path('category/', views.CategoryList.as_view(), name='category'),
     path('categoryrecipe/<slug:slug>', views.CategoryRecipe.as_view(), name='category_recipe'),
     path('<slug:slug>/', views.RecipeDetail.as_view(), name='recipe_detail'),
+    path('like/<slug:slug>', views.RecipeLike.as_view(), name='recipe_like'),
 ]

@@ -65,6 +65,10 @@ class RecipeDetail(View):
             },
         )
 
+class CreateRecipe(View):
+    model = Recipe
+    template_name = 'create_recipe.html'
+
 
 # class Index(View):
 

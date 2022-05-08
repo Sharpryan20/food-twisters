@@ -1,7 +1,14 @@
 {% extends "base.html" %}
-
+{% load crispy_forms_tags %}
 {% block content %}
 
+<div class="container-fluid">
+    {% if user.is_authenticated %}
 
+    <form method="post" action="">
+        {{ form|crispy }}
+    </form>
+</div>
+{% endif %}
 
 {% endblock %}

@@ -246,6 +246,14 @@ body {
     color: #465362;
 }
 
+.detail-image-text-2 {
+    font-family: 'Roboto Condensed',
+    sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #465362;
+}
+
 .comment-title {
     font-weight: 600;
     color: #465362;
@@ -289,6 +297,7 @@ body {
 .recipe_like {
     font-size: 20px;
     text-align: right;
+    margin-top: 10px;
 }
 
 /* Category CSS */

@@ -13,9 +13,12 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="detail-image-box mb-4">
                         <img class="card-img-top detail-image" src=" {{ recipe.featured_image.url }}">
-                        <p class="detail-image-text card-upload">
-                            Uploaded by: {{ recipe.author }}
-                        </p>
+                        <div class="card-upload">
+                            <p class="detail-image-text">
+                                Uploaded by: {{ recipe.author }}
+                            </p>
+                            <p class="detail-image-text-2">{{ recipe.created_on }}</p>
+                        </div>
                         <div class="recipe_like">
                             {% if user.is_authenticated %}
                             <form action="{% url 'recipe_like' recipe.slug %}" class="d-inline" method="POST">

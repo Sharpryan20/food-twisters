@@ -128,11 +128,12 @@ def CreateRecipe(request):
             recipe = recipe_form.save(commit=False)
 
             recipe.save()
-            return redirect('index')
+            slug = recipe.slug
+            
+            return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
     else:
         recipe_form = RecipeForm()
     return render(request, "create_recipe.html", context)
-
 
 
 

@@ -123,10 +123,11 @@ def CreateRecipe(request):
     if request.method == "POST":
         recipe_form = RecipeForm(request.POST, request.FILES)
         if recipe_form.is_valid():
-            recipe_form = recipe_form.save(commit=False)
-            recipe_form.author = request.user
-            recipe_form.status = 1
-            recipe_form.save()
+            recipe_form.instance.author = request.user.id
+            recipe_form.instance.status = 1
+            recipe = recipe_form.save(commit=False)
+
+            recipe.save()
             return redirect('index')
     else:
         recipe_form = RecipeForm()

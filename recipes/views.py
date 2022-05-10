@@ -115,13 +115,13 @@ def CreateRecipe(request):
     """
     renders share a recipe page
     """
-    recipe_form = RecipeForm(request.POST or None)
+    recipe_form = RecipeForm(request.POST or None, request.FILES or None)
     context = {
         'recipe_form': recipe_form,
     }
 
     if request.method == "POST":
-        recipe_form = RecipeForm(request.POST)
+        recipe_form = RecipeForm(request.POST, request.FILES)
         if recipe_form.is_valid():
             recipe_form = recipe_form.save(commit=False)
             recipe_form.author = request.user
@@ -131,6 +131,9 @@ def CreateRecipe(request):
     else:
         recipe_form = RecipeForm()
     return render(request, "create_recipe.html", context)
+
+
+
 
 
         

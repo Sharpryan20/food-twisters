@@ -6,4 +6,51 @@
     <h1 class="cr-heading">Make a recipe!</h1>
 </div>
 
+{% if user.is_authenticated %}
+<div class="container-fluid">
+    <div>
+        <h2>Create your recipe here</h2>
+    </div>
+    <div>
+        <form action="." method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col">
+                    {% csrf_token %}
+                    <div class="row">
+                        {{ recipe_form.title | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.category | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.preparation_time | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.cooking_time | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.total_time | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.serving_size | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.ingredients | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.instructions | as_crispy_field | safe }}
+                    </div>
+                    <div class="row">
+                        {{ recipe_form.featured_image | as_crispy_field | safe }}
+                        <p>A placeholder image will be provided if one is not selected.</p>
+                    </div>
+                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% else %}
+{% endif %}
+
 {% endblock %}

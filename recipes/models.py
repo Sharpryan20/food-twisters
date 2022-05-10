@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.template.defaultfilters import slugify
+import string
+import random
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -35,6 +38,35 @@ class Recipe(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='recipe_likes', blank=True)
+
+    # unique slug solution found on:
+    # https://www.geeksforgeeks.org/add-the-slug-field-inside-django-model/
+
+    def random_string_generator(self,
+                                size=10,
+                                chars=string.ascii_lowercase + string.digits):
+        """
+        generates a string of characters consisting of
+        lowercase letters and digits, lenght is set to 10
+        """
+        return ''.join(random.choice(chars) for _ in range(size))
+
+    def save(self, *args, **kwargs):
+        """
+        overrides the save method and automaticaly generates slug field
+        """
+        if not self.slug:
+            title_string = slugify(self.title)
+            random_characters = self.random_string_generator()
+            slug = f'{title_string}-{random_characters}'
+            # checks if this slug is already in the column slug
+            if slug in self.slug:
+                random_characters = self.random_string_generator()
+                new_slug = f'{title_string}-{random_characters}'
+                self.slug = new_slug
+            else:
+                self.slug = slug
+        super(Recipe, self).save(*args, **kwargs)
 
     class Meta:
         """ Orders posts by date created using descending order """

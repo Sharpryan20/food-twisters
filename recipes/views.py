@@ -130,7 +130,7 @@ def CreateRecipe(request):
             recipe = recipe_form.save(commit=False)
 
             recipe.save()
-            return HttpResponseRedirect(reverse('recipe_detail', context))
+            return redirect('index')
     else:
         recipe_form = RecipeForm()
     return render(request, "create_recipe.html", context)

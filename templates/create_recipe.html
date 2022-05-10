@@ -3,12 +3,7 @@
 {% block content %}
 
 <div class="container-fluid">
-    {% if user.is_authenticated %}
-
-    <form method="post" action="">
-        {{ form|crispy }}
-    </form>
+    <h1 class="cr-heading">Make a recipe!</h1>
 </div>
-{% endif %}
 
 {% endblock %}

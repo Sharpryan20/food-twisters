@@ -152,8 +152,11 @@ body {
 
 .recipe-title {
     text-align: center;
-    font-size: 50px;
-    text-decoration: underline;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Grape Nuts',
+    sans-serif;
+    color: #465362;
 }
 
 .recipe-text {
@@ -312,6 +315,17 @@ body {
 
 .category-link {
     text-decoration: none;
+}
+
+/* create_recipe CSS */
+
+.cr-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Grape Nuts',
+    sans-serif;
+    color: #465362;
 }
 
 /* Log in/out CSS */

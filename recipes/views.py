@@ -21,7 +21,7 @@ class RecipeDetail(View):
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
-        
+
         return render(
             request,
             "recipe_detail.html",
@@ -33,12 +33,13 @@ class RecipeDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
-        comments = recipe.comments.filter(approved=True).order_by("-created_on")
+        comments = recipe.comments.filter(
+            approved=True).order_by("-created_on")
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -85,11 +86,12 @@ class CategoryList(generic.ListView):
 class CategoryRecipe(View):
     def get(self, request, slug, *args, **kwargs):
         category = get_object_or_404(Category, slug=slug)
-        queryset = Recipe.objects.filter(category__slug=slug).order_by('-created_on')
+        queryset = Recipe.objects.filter(
+            category__slug=slug).order_by('-created_on')
         context = {
             'recipe_list': queryset,
             'category': category
-            }
+        }
 
         return render(
             request,
@@ -107,7 +109,7 @@ class RecipeLike(View):
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
@@ -123,19 +125,12 @@ def CreateRecipe(request):
     if request.method == "POST":
         recipe_form = RecipeForm(request.POST, request.FILES)
         if recipe_form.is_valid():
-            recipe_form.instance.author = request.user.id
+            recipe_form.instance.author = request.user
             recipe_form.instance.status = 1
             recipe = recipe_form.save(commit=False)
 
             recipe.save()
-            slug = recipe.slug
-            
-            return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+            return HttpResponseRedirect(reverse('recipe_detail', context))
     else:
         recipe_form = RecipeForm()
     return render(request, "create_recipe.html", context)
-
-
-
-
-        

@@ -3,6 +3,7 @@
 {% block content %}
 
 <div class="container-fluid">
+    {% if user.is_authenticated %}
     <div class="row">
         <div class="col-12 mt-3 center">
             <div class="md-4">
@@ -17,6 +18,22 @@
             </div>
         </div>
     </div>
+    {% else %}
+    <div class="row">
+        <div class="col-12 mt-3 center">
+            <div class="md-4">
+                <div class="hero-title">
+                    <h1>Welcome to </h1>
+                    <h2>Food Twisters</h2>
+                </div>
+                <div class="col-12">
+                    <img src="https://res.cloudinary.com/dvgol9ade/image/upload/v1648054904/main-image_crs6aj.jpg" alt=""
+                        class="hero-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </div>
 <hr>
 <div class="container-fluid">

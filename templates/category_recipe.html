@@ -19,7 +19,7 @@
                     {% endif %}
                 </div>
                 <div class="recipe-info">
-                    <a href="{% url 'recipe_detail' recipe.slug %}" class="recipe-link">
+                    <a href="{% url 'recipe_detail' slug=recipe.slug %}" class="recipe-link">
                         <h2 class="card-title">{{ recipe.title }}</h2>
                     </a>
                     <div class="image-flash">

@@ -125,12 +125,15 @@ def CreateRecipe(request):
     if request.method == "POST":
         recipe_form = RecipeForm(request.POST, request.FILES)
         if recipe_form.is_valid():
+            print('valid')
             recipe_form.instance.author = request.user
             recipe_form.instance.status = 1
             recipe = recipe_form.save(commit=False)
 
             recipe.save()
             return redirect('index')
+        else:
+            print('invalid')
     else:
         recipe_form = RecipeForm()
     return render(request, "create_recipe.html", context)

@@ -328,6 +328,19 @@ body {
     color: #465362;
 }
 
+.cr-login-text {
+    text-align: center;
+    margin: 30px;
+}
+
+.cr-login-heading {
+    font-size: 80px;
+}
+
+.cr-login-p {
+    font-size: 40px;
+}
+
 /* Log in/out CSS */
  .login-page {
     text-align: center;

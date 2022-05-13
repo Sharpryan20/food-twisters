@@ -137,3 +137,12 @@ def CreateRecipe(request):
     else:
         recipe_form = RecipeForm()
     return render(request, "create_recipe.html", context)
+
+
+class UserRecipes(generic.ListView):
+    def get(self, request):
+        recipes = Recipe.objects.filter(
+            author=request.user, status=1
+        ).order_by('-created_on')
+        print(recipes)
+        return render(request, 'my_recipes.html', {'recipes': recipes})

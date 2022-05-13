@@ -22,16 +22,16 @@
     <!-- Nav Bar -->
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
+            <a class="nav-link" href="{% url 'post' %}">Recipes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'category' %}">Categories</a>
+            <a class="nav-link" href="{% url 'create_recipe' %}">Create</a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-bar-logo" href="{% url 'index' %}">Food Twisters</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'post' %}">Recipes</a>
+            <a class="nav-link" href="{% url 'category' %}">Category</a>
         </li>
         {% if user.is_authenticated %}
         <li class="nav-item">

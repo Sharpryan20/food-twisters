@@ -164,6 +164,15 @@ body {
     font-size: 25px;
 }
 
+.recipe-button {
+    text-decoration: none;
+    color: #465362;
+}
+
+.recipe-button:hover {
+    color: #98733E;
+}
+
 .recipe-link {
     text-decoration: none;
     cursor: pointer;

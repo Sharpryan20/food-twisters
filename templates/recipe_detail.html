@@ -12,7 +12,14 @@
                 <h1 class="detail-title">{{ recipe.title }}</h1>
                 <div class="col-sm-12 col-md-6">
                     <div class="detail-image-box mb-4">
-                        <img class="card-img-top detail-image" src=" {{ recipe.featured_image.url }}">
+                        <div>
+                            {% if "placeholder" in recipe.featured_image.url %}
+                            <img class="card-img-top"
+                                src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg">
+                            {% else %}
+                            <img class="card-img-top" src=" {{ recipe.featured_image.url }}">
+                            {% endif %}
+                        </div>
                         <div class="card-upload">
                             <p class="detail-image-text">
                                 Uploaded by: {{ recipe.author }}

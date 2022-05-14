@@ -312,6 +312,20 @@ body {
     margin-top: 10px;
 }
 
+.crud-btn {
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #465362;
+    margin-top: 10px;
+}
+
+.crud-btn:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #465362;
+    
+}
+
 /* Category CSS */
 
 .category-title {

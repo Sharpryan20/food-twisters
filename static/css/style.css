@@ -159,6 +159,11 @@ body {
     color: #465362;
 }
 
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
 .recipe-text {
     text-align: center;
     font-size: 25px;

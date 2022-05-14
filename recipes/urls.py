@@ -19,4 +19,5 @@ urlpatterns = [
     path('create-recipe', views.CreateRecipe, name='create_recipe'),
     path('user-recipe', views.UserRecipes.as_view(), name='user_recipes'),
     path('update-recipe/<slug:slug>', views.UpdateRecipe.as_view(), name='update_recipe'),
+    path('delete-recipe/<slug:slug>', views.DeleteRecipe.as_view(), name='delete_recipe'),
 ]

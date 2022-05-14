@@ -29,6 +29,7 @@
                         <div>
                             {% if user.is_authenticated and user.id == recipe.author.id %}
                             <a class="btn btn-primary" href="{% url 'update_recipe' recipe.slug %}" role="button">Edit</a>
+                            <a class="btn btn-danger" href="{% url 'delete_recipe' recipe.slug %}" role="button">Delete</a>
                             {% else %}
                             {% endif %}
                         </div>

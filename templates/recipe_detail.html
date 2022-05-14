@@ -26,6 +26,9 @@
                             </p>
                             <p class="detail-image-text-2">{{ recipe.created_on }}</p>
                         </div>
+                        <div>
+                            <a class="btn btn-primary" href="{% url 'update_recipe' recipe.slug %}" role="button">Edit</a>
+                        </div>
                         <div class="recipe_like">
                             {% if user.is_authenticated %}
                             <form action="{% url 'recipe_like' recipe.slug %}" class="d-inline" method="POST">

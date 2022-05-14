@@ -159,7 +159,7 @@ body {
     color: #465362;
 }
 
-.card-img-top {
+.recipe-image {
     height: 250px;
     object-fit: cover;
 }

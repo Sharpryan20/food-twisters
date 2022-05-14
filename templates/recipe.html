@@ -14,6 +14,7 @@
                     <p class="recipe-text">Want to see just yours?</p>
                     <a class="recipe-text recipe-button" href="{% url 'user_recipes' %}">Click here!</a>
                 {% else %}
+                    <p class="recipe-text">Login in to view your own recipes!</p>
                 {% endif %}
                 {% for recipe in recipe_list %}
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">

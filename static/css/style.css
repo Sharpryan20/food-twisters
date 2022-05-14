@@ -214,6 +214,21 @@ body {
     margin: 3px;
 }
 
+.create-btn {
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #465362;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.create-btn:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #465362;
+
+}
+
 /* Recipe Detail CSS */
 
 .detail-title {
@@ -410,6 +425,23 @@ body {
     font-size: 25px;
 }
 
+/* delete_recipe.html CSS*/
+
+.delete-heading {
+    font-size: 35px;
+    font-family: 'Roboto Condensed',
+    sans-serif;
+}
+
+.delete-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.delete-p {
+    font-size: 20px;
+}
 
 /* Footer CSS */
 

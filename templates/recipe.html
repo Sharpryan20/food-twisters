@@ -8,7 +8,7 @@
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                <h1 class="recipe-title">Recipes</h1>
+                <h1 class="recipe-title">Recipes <a class="btn create-btn" href="{% url 'create_recipe' %}" role="button"><i class="fas fa-plus"></i></a></h1>
                 <p class="recipe-text">Click a recipe to view more!</p>
                 {% if user.is_authenticated %}
                     <p class="recipe-text">Want to see just yours?</p>

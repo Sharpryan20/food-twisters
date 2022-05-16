@@ -467,3 +467,17 @@ body {
     text-decoration: none;
     color: #B28649;
 }
+
+/* Media Queries */
+
+/* For media screens 768px wide and down */
+
+@media screen and (max-width: 768px) {
+    .signout-img {
+        display: none;
+    }
+
+    .signout-box {
+        margin-top: 0px;
+    }
+}

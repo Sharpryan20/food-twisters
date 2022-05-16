@@ -5,21 +5,26 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- Personal Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                <h1 class="recipe-title">Recipes</h1>
+                <h1 class="recipe-title">Recipes <a class="btn create-btn" href="{% url 'create_recipe' %}"
+                        role="button"><i class="fas fa-plus"></i></a></h1>
                 <p class="recipe-text">Click a recipe to view more!</p>
+                {% if user.is_authenticated %}
+                {% else %}
+                <p class="recipe-text">Login in to view your own recipes!</p>
+                {% endif %}
                 {% for recipe in recipes %}
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4">
                     <div class="card mb-4">
                         <div class="post-banner">
                             <div class="image-container">
                                 {% if "placeholder" in recipe.featured_image.url %}
-                                <img class="card-img-top"
+                                <img class="card-img-top recipe-image"
                                     src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ recipe.featured_image.url }}">
+                                <img class="card-img-top recipe-image" src=" {{ recipe.featured_image.url }}">
                                 {% endif %}
                             </div>
                             <div class="recipe-info">

@@ -25,6 +25,28 @@
                                 Uploaded by: {{ recipe.author }}
                             </p>
                             <p class="detail-image-text-2">{{ recipe.created_on }}</p>
+                            <div class="recipe_like">
+                                {% if user.is_authenticated %}
+                                <form action="{% url 'recipe_like' recipe.slug %}" class="d-inline" method="POST">
+                                    {% csrf_token %}
+                                    {% if liked %}
+                            
+                                    <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
+                                            class="fas fa-heart"></i></button>
+                            
+                                    {% else %}
+                            
+                                    <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
+                                            class="far fa-heart"></i></button>
+                            
+                                    {% endif %}
+                                </form>
+                                {% else %}
+                            
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                {% endif %}
+                                <span class="text-seconday"> {{ recipe.number_of_likes }}</span>
+                            </div>
                         </div>
                         <div>
                             {% if user.is_authenticated and user.id == recipe.author.id %}
@@ -32,28 +54,6 @@
                             <a class="btn crud-btn" href="{% url 'delete_recipe' recipe.slug %}" role="button">Delete</i></a>
                             {% else %}
                             {% endif %}
-                        </div>
-                        <div class="recipe_like">
-                            {% if user.is_authenticated %}
-                            <form action="{% url 'recipe_like' recipe.slug %}" class="d-inline" method="POST">
-                                {% csrf_token %}
-                                {% if liked %}
-                            
-                                <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
-                                        class="fas fa-heart"></i></button>
-                            
-                                {% else %}
-                            
-                                <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
-                                        class="far fa-heart"></i></button>
-                            
-                                {% endif %}
-                            </form>
-                            {% else %}
-                            
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
-                            {% endif %}
-                            <span class="text-seconday"> {{ recipe.number_of_likes }}</span>
                         </div>
                     </div>
                     <div class="comment-section">

@@ -346,6 +346,10 @@ body {
     
 }
 
+.rd-image {
+    height: 200px;
+}
+
 /* Category CSS */
 
 .category-title {

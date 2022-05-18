@@ -42,6 +42,10 @@ body {
     color: #B28649;
 }
 
+.hide {
+    display: none;
+}
+
 /* Index.html CSS */
 
 .hero-img {
@@ -477,6 +481,28 @@ body {
 /* For media screens 768px wide and down */
 
 @media screen and (max-width: 768px) {
+    /* Nav queries */
+    .nav-link {
+        display: none;
+    }
+    .nav-bar-logo {
+        display: block;
+        text-align: left;
+    }
+    .hide {
+        display: block;
+    }
+    .nav-dropdown {
+    margin-top: 8%;
+    background-color: #5D737E;
+    }
+    .nav-dropdown:hover {
+    background-color: #526169;
+    }
+    .dropdown-nav {
+        margin-top: 8%;
+    }
+    /* signout queries */
     .signout-img {
         display: none;
     }

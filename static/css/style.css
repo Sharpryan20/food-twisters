@@ -48,7 +48,7 @@ body {
 
 /* Index.html CSS */
 
-.hero-img {
+.hero-img-index {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -536,5 +536,11 @@ body {
     }
     .index-link {
         font-size: 18px;
+    }
+    .hero-img-index {
+        height: 250px;
+    }
+    .index-button-image {
+        height: 300px;
     }
 }

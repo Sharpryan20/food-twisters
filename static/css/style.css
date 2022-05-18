@@ -594,4 +594,7 @@ body {
     .category-title {
         font-size: 45px;
     }
+    .cr-create-btn {
+        font-size: 10px;
+    }
 }

@@ -5,7 +5,10 @@
 <section>
     <div class="container">
         {% if recipe_list|length == 0 %}
-        <p class="text-center py-5">There are no recipes yet.</p>
+        <div class="catergory_recipe-text">
+            <p class="text-center">There are no recipes yet.</p>
+            <p class="text-center">Be the first to create a recipe! <a class="btn create-btn cr-create-btn" href="{% url 'create_recipe' %}" role="button"><i class="fas fa-plus"></i></a></p>
+        </div>
         {% else %}
         <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
             <h1 class="category-title">

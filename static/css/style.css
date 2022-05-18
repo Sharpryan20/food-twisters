@@ -392,6 +392,10 @@ body {
     font-size: 40px;
 }
 
+.create-heading2 {
+    text-align: center;
+}
+
 /* Log in/out CSS */
  .login-page {
     text-align: center;
@@ -436,6 +440,17 @@ body {
 .signup-text {
     margin-top: 15%;
     font-size: 25px;
+}
+
+.submit-btn {
+    border: 2px solid #5D737E;
+    margin-bottom: 2%;
+}
+
+.submit-btn:hover {
+    border: 2px solid #526169;
+    background-color: #526169;
+    color: white;
 }
 
 /* delete_recipe.html CSS*/
@@ -542,5 +557,36 @@ body {
     }
     .index-button-image {
         height: 300px;
+    }
+
+    /* Recipe queries */
+    .recipe-image {
+        height: 200px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .image-flash {
+        font-size: 12px;
+    }
+    .recipe-text {
+        font-size: 20px;
+    }
+    .recipe-title {
+        font-size: 40px;
+    }
+    .create-btn {
+        font-size: 15px;
+    }
+    
+    /* Create Recipe Queries */
+    .submit-btn {
+        font-size: 16px;
+    }
+    .cr-heading {
+        font-size: 40px;
+    }
+    .create-heading2 {
+        font-size: 20px;
     }
 }

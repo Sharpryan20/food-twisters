@@ -519,7 +519,7 @@ body {
         margin-top: 8%;
     }
     /* signout queries */
-    .signout-img {
+    .signout-img, .login-img, .signup-image {
         display: none;
     }
 
@@ -624,10 +624,14 @@ body {
     .commented-user {
         font-size: 15px;
     }
-    .recipe-ingredients-title,
-    .recipe-instructions-title,
-    .recipe-time-title,
-    .serving-title {
-        font-size: 25px;
+
+    /* Login/out Signup Queries */
+    .login-title, .logout-title, .signup-title {
+        font-size: 50px;
     }
+    .login-text, .logout-text, .signup-text {
+        margin: 10%; 
+        font-size: 25px;   
+    }
+    
 }

@@ -589,4 +589,9 @@ body {
     .create-heading2 {
         font-size: 20px;
     }
+
+    /* Category Queries */
+    .category-title {
+        font-size: 45px;
+    }
 }

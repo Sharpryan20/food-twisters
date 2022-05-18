@@ -334,6 +334,7 @@ body {
     font-size: 20px;
     text-align: right;
     margin-top: 10px;
+    margin-right: 2%;
 }
 
 .crud-btn {
@@ -596,5 +597,37 @@ body {
     }
     .cr-create-btn {
         font-size: 10px;
+    }
+
+    /* recipe_detail Queries */
+    .detail-title {
+        font-size: 40px;
+    }
+    .detail-image-text {
+        font-size: 20px;
+    }
+    .detail-image-text-2 {
+        font-size: 15px;
+    }
+    .recipe_like {
+        font-size: 15px;
+    }
+    .crud-btn {
+        font-size: 15px;
+    }
+    .comment-title {
+        font-size: 25px;
+    }
+    .comment-user {
+        font-size: 15px;
+    }
+    .commented-user {
+        font-size: 15px;
+    }
+    .recipe-ingredients-title,
+    .recipe-instructions-title,
+    .recipe-time-title,
+    .serving-title {
+        font-size: 25px;
     }
 }

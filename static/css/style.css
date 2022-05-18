@@ -528,9 +528,9 @@ body {
     }
 }
 
-/* For media screens 400px wide and down */
+/* For media screens 420px wide and down */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     /* Index queries */
     .hero-title h1 {
         font-size: 60px;

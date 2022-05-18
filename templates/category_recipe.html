@@ -8,6 +8,9 @@
         <p class="text-center py-5">There are no recipes yet.</p>
         {% else %}
         <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <h1 class="category-title">
+                {{ category.title }}
+            </h1>
             {% for recipe in recipe_list %}
             <div class="post-banner">
                 <div class="image-container">

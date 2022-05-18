@@ -590,6 +590,12 @@ body {
     .create-heading2 {
         font-size: 20px;
     }
+    .cr-login-heading {
+        font-size: 60px;
+    }
+    .cr-login-p {
+        font-size: 20px;
+    }
 
     /* Category Queries */
     .category-title {

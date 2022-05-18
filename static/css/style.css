@@ -511,3 +511,30 @@ body {
         margin-top: 0px;
     }
 }
+
+/* For media screens 400px wide and down */
+
+@media screen and (max-width: 400px) {
+    /* Index queries */
+    .hero-title h1 {
+        font-size: 60px;
+    }
+    .hero-title h2 {
+        font-size: 40px;
+    }
+    .contact-p {
+        font-size: 20px;
+    }
+    .contact-us-title {
+        font-size: 40px;
+    }
+    .map-box {
+        display: none;
+    }
+    .contact-box {
+        font-size: 15px;
+    }
+    .index-link {
+        font-size: 18px;
+    }
+}

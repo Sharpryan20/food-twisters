@@ -42,32 +42,32 @@
             <a class="nav-link" href="{% url 'account_login' %}">Login</a>
         </li>
         {% endif %}
-        <div class="dropdown hide dropdown-nav">
-            <button class="btn btn-secondary dropdown-toggle nav-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fas fa-grip-lines"></i>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="{% url 'post' %}">Recipes</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="{% url 'create_recipe' %}">Create</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="{% url 'category' %}">Category</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                {% if user.is_authenticated %}
-                <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
-                {% else %}
-                <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
-                {% endif %}
-            </ul>
-        </div>
     </ul>
+    <div class="dropdown hide dropdown-nav">
+        <button class="btn btn-secondary dropdown-toggle nav-dropdown" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-grip-lines"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="{% url 'post' %}">Recipes</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="{% url 'create_recipe' %}">Create</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="{% url 'category' %}">Category</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+            {% endif %}
+        </ul>
+    </div>
     <hr>
 
     <main class="flex-shrink-0 main-bg">
@@ -78,7 +78,7 @@
     
     <!-- Footer with Social Accounts -->
     <footer class="footer mt-auto by-3">
-        <p class="footer-text">Want to find out more? &copy 2022</p>
+        <p class="footer-text">Want to find out more? &copy:2022</p>
         <div class="container-fluid social-links">
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>

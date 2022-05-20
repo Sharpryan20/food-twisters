@@ -68,7 +68,7 @@ body {
 
 .hero-title h2 {
     font-family: 'Inspiration',
-    sans-serif;
+        sans-serif;
     font-size: 60px;
     color: #B28649;
     font-weight: bold;
@@ -116,7 +116,7 @@ body {
 
 .contact-title {
     font-family: 'Inspiration',
-    sans-serif;
+        sans-serif;
     color: #5D737E;
     text-align: center;
     font-size: 60px;
@@ -159,7 +159,7 @@ body {
     font-weight: bold;
     font-size: 65px;
     font-family: 'Grape Nuts',
-    sans-serif;
+        sans-serif;
     color: #465362;
 }
 
@@ -205,14 +205,14 @@ body {
     font-size: 18px;
 }
 
-.card-title, .card-text {
+.card-title,
+.card-text {
     color: #98733E;
 }
 
 .card-body {
     border: 1px solid lightgray;
     border-radius: 5px;
-    padding: none;
 }
 
 .post-banner {
@@ -253,7 +253,8 @@ body {
     margin-bottom: 20px;
 }
 
-.recipe-time, .serving-portions {
+.recipe-time,
+.serving-portions {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -266,7 +267,7 @@ body {
     text-align: center;
     font-size: 40px;
     font-family: 'kavoon',
-    sans-serif;
+        sans-serif;
     color: #B28649;
     text-decoration: underline;
 }
@@ -284,7 +285,7 @@ body {
 
 .detail-image-text-2 {
     font-family: 'Roboto Condensed',
-    sans-serif;
+        sans-serif;
     text-align: center;
     font-size: 20px;
     color: #465362;
@@ -348,7 +349,7 @@ body {
     font-weight: bold;
     color: white;
     background-color: #465362;
-    
+
 }
 
 .rd-image {
@@ -376,7 +377,7 @@ body {
     font-weight: bold;
     font-size: 65px;
     font-family: 'Grape Nuts',
-    sans-serif;
+        sans-serif;
     color: #465362;
 }
 
@@ -398,28 +399,32 @@ body {
 }
 
 /* Log in/out CSS */
- .login-page {
+.login-page {
     text-align: center;
- }
+}
 
- .login-box {
+.login-box {
     width: 80%;
- }
+}
 
- .signup_link {
+.signup_link {
     text-decoration: none;
- }
+}
 
- .signout-box, .signin-box, .singup-box {
+.signout-box,
+.signin-box,
+.singup-box {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
- }
+}
 
- .logout-title, .login-title, .signup-title {
+.logout-title,
+.login-title,
+.signup-title {
     font-size: 80px;
     font-family: 'Orelega One',
-    sans-serif;
+        sans-serif;
     text-align: center;
     color: #5D737E;
 }
@@ -429,10 +434,10 @@ body {
     margin-top: 50%;
 }
 
- .login-text {
+.login-text {
     font-size: 30px;
     margin-top: 30%;
- }
+}
 
 .logout-button {
     font-size: 25px;
@@ -459,7 +464,7 @@ body {
 .delete-heading {
     font-size: 35px;
     font-family: 'Roboto Condensed',
-    sans-serif;
+        sans-serif;
 }
 
 .delete-text {
@@ -497,29 +502,38 @@ body {
 /* For media screens 768px wide and down */
 
 @media screen and (max-width: 768px) {
+
     /* Nav queries */
     .nav-link {
         display: none;
     }
+
     .nav-bar-logo {
         display: block;
         text-align: left;
     }
+
     .hide {
         display: block;
     }
+
     .nav-dropdown {
-    margin-top: 8%;
-    background-color: #5D737E;
+        margin-top: 8%;
+        background-color: #5D737E;
     }
+
     .nav-dropdown:hover {
-    background-color: #526169;
+        background-color: #526169;
     }
+
     .dropdown-nav {
         margin-left: 40%;
     }
+
     /* signout queries */
-    .signout-img, .login-img, .signup-image {
+    .signout-img,
+    .login-img,
+    .signup-image {
         display: none;
     }
 
@@ -531,31 +545,40 @@ body {
 /* For media screens 450px wide and down */
 
 @media screen and (max-width: 450px) {
+
     /* Index queries */
     .hero-title h1 {
         font-size: 60px;
     }
+
     .hero-title h2 {
         font-size: 40px;
     }
+
     .contact-p {
         font-size: 20px;
     }
+
     .contact-us-title {
         font-size: 40px;
     }
+
     .map-box {
         display: none;
     }
+
     .contact-box {
         font-size: 18px;
     }
+
     .index-link {
         font-size: 18px;
     }
+
     .hero-img-index {
         height: 250px;
     }
+
     .index-button-image {
         height: 300px;
     }
@@ -564,35 +587,44 @@ body {
     .recipe-image {
         height: 200px;
     }
+
     .card-title {
         font-size: 20px;
     }
+
     .image-flash {
         font-size: 12px;
     }
+
     .recipe-text {
         font-size: 20px;
     }
+
     .recipe-title {
         font-size: 40px;
     }
+
     .create-btn {
         font-size: 15px;
     }
-    
+
     /* Create Recipe Queries */
     .submit-btn {
         font-size: 16px;
     }
+
     .cr-heading {
         font-size: 40px;
     }
+
     .create-heading2 {
         font-size: 20px;
     }
+
     .cr-login-heading {
         font-size: 60px;
     }
+
     .cr-login-p {
         font-size: 20px;
     }
@@ -601,6 +633,7 @@ body {
     .category-title {
         font-size: 45px;
     }
+
     .cr-create-btn {
         font-size: 10px;
     }
@@ -609,27 +642,35 @@ body {
     .detail-title {
         font-size: 40px;
     }
+
     .detail-image-text {
         font-size: 20px;
     }
+
     .detail-image-text-2 {
         font-size: 15px;
     }
+
     .recipe_like {
         font-size: 15px;
     }
+
     .crud-btn {
         font-size: 15px;
     }
+
     .comment-title {
         font-size: 25px;
     }
+
     .comment-user {
         font-size: 15px;
     }
+
     .commented-user {
         font-size: 15px;
     }
+
     .recipe-ingredients-title,
     .recipe-instructions-title,
     .recipe-time-title,
@@ -638,12 +679,17 @@ body {
     }
 
     /* Login/out Signup Queries */
-    .login-title, .logout-title, .signup-title {
+    .login-title,
+    .logout-title,
+    .signup-title {
         font-size: 50px;
     }
-    .login-text, .logout-text, .signup-text {
-        margin: 10%; 
-        font-size: 25px;   
+
+    .login-text,
+    .logout-text,
+    .signup-text {
+        margin: 10%;
+        font-size: 25px;
     }
-    
+
 }

@@ -5,6 +5,9 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Ability to manage categories in admin
+    """
     list_display = ('title', 'slug')
     prepopulated_fields = {'slug': ('title',)}
     search_fields = ('title',)
@@ -12,7 +15,9 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Recipe)
 class RecipeAdmin(SummernoteModelAdmin):
-
+    """
+    Ability to manage recipes in admin
+    """
     list_display = ('title', 'slug', 'author', 'status', 'created_on')
     search_fields = ('title', 'ingredients', 'serving_size')
     prepopulated_fields = {'slug': ('title',)}
@@ -22,7 +27,9 @@ class RecipeAdmin(SummernoteModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
-
+    """
+    Ability to manage comments in admin
+    """
     list_display = ('name', 'body', 'post', 'created_on', 'approved')
     list_filter = ('approved', 'created_on')
     search_fields = ('name', 'email', 'body', 'author')

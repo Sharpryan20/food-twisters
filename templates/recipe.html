@@ -8,13 +8,14 @@
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                <h1 class="recipe-title">Recipes <a class="btn create-btn" href="{% url 'create_recipe' %}" role="button"><i class="fas fa-plus"></i></a></h1>
+                <h1 class="recipe-title">Recipes <a class="btn create-btn" href="{% url 'create_recipe' %}"
+                        role="button"><i class="fas fa-plus"></i></a></h1>
                 <p class="recipe-text">Click a recipe to view more!</p>
                 {% if user.is_authenticated %}
-                    <p class="recipe-text">Want to see just yours?</p>
-                    <a class="recipe-text recipe-button" href="{% url 'user_recipes' %}">Click here!</a>
+                <p class="recipe-text">Want to see just yours?</p>
+                <a class="recipe-text recipe-button" href="{% url 'user_recipes' %}">Click here!</a>
                 {% else %}
-                    <p class="recipe-text">Login in to view your own recipes!</p>
+                <p class="recipe-text">Login in to view your own recipes!</p>
                 {% endif %}
                 {% for recipe in recipe_list %}
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
@@ -23,9 +24,11 @@
                             <div class="image-container">
                                 {% if "placeholder" in recipe.featured_image.url %}
                                 <img class="card-img-top recipe-image"
-                                    src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg" alt="loaf-of-bread">
+                                    src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg"
+                                    alt="loaf-of-bread">
                                 {% else %}
-                                <img class="card-img-top recipe-image" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
+                                <img class="card-img-top recipe-image" src=" {{ recipe.featured_image.url }}"
+                                    alt="{{ recipe.title }}">
                                 {% endif %}
                             </div>
                             <div class="recipe-info">

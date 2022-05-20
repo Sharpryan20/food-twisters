@@ -8,14 +8,15 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-3 left">
-            <class class="row">
+            <div class="row">
                 <h1 class="detail-title">{{ recipe.title }}</h1>
                 <div class="col-sm-12 col-md-12">
                     <div class="detail-image-box mb-4">
                         <div>
                             {% if "placeholder" in recipe.featured_image.url %}
                             <img class="card-img-top"
-                                src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg" alt="loaf-of-bread">
+                                src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg"
+                                alt="loaf-of-bread">
                             {% else %}
                             <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
                             {% endif %}
@@ -30,19 +31,19 @@
                                 <form action="{% url 'recipe_like' recipe.slug %}" class="d-inline" method="POST">
                                     {% csrf_token %}
                                     {% if liked %}
-                            
+
                                     <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
                                             class="fas fa-heart"></i></button>
-                            
+
                                     {% else %}
-                            
+
                                     <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i
                                             class="far fa-heart"></i></button>
-                            
+
                                     {% endif %}
                                 </form>
                                 {% else %}
-                            
+
                                 <span class="text-secondary"><i class="far fa-heart"></i></span>
                                 {% endif %}
                                 <span class="text-seconday"> {{ recipe.number_of_likes }}</span>
@@ -51,22 +52,23 @@
                         <div>
                             {% if user.is_authenticated and user.id == recipe.author.id %}
                             <a class="btn crud-btn" href="{% url 'update_recipe' recipe.slug %}" role="button">Edit</a>
-                            <a class="btn crud-btn" href="{% url 'delete_recipe' recipe.slug %}" role="button">Delete</i></a>
+                            <a class="btn crud-btn" href="{% url 'delete_recipe' recipe.slug %}"
+                                role="button">Delete</i></a>
                             {% else %}
                             {% endif %}
                         </div>
                     </div>
                     <div class="comment-section">
                         <div class="recipe-comment">
-                        
+
                             {% if commented %}
                             <div class="alert alert-success" role="alert">
                                 Your comment has been published!
                             </div>
                             {% else %}
-                        
+
                             {% if user.is_authenticated %}
-                        
+
                             <h3 class="comment-title">Your comment here:</h3>
                             <p class="comment-user">User: {{ user.username }}</p>
                             <form method="post" style="margin-top: 1.3em;">
@@ -76,7 +78,7 @@
                             </form>
                             {% endif %}
                             {% endif %}
-                        
+
                         </div>
                         <h3 class="comment-title">Comments:</h3>
                         <div class="card-body public-comments">
@@ -84,7 +86,7 @@
                             <div class="comments">
                                 <p class="commented-user">
                                     <!-- The commenter's name goes here.-->
-                                    {{ comment.name }} 
+                                    {{ comment.name }}
                                 </p>
                                 <p class="user-comment">
                                     {{ comment.body | linebreaks }}
@@ -111,10 +113,11 @@
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-6">
                                             <div class="detail-times">
-                                                <h4 class="recipe-time-title">Preparation</h3>
-                                                    <h5 class="recipe-time"> Prepation time: {{ recipe.preparation_time }}</h5>
-                                                    <h5 class="recipe-time"> Cooking time: {{ recipe.cooking_time }} </h5>
-                                                    <h5 class="recipe-time"> Total time: {{ recipe.total_time }} </h5>
+                                                <h4 class="recipe-time-title">Preparation</h4>
+                                                <h5 class="recipe-time"> Prepation time: {{ recipe.preparation_time }}
+                                                </h5>
+                                                <h5 class="recipe-time"> Cooking time: {{ recipe.cooking_time }} </h5>
+                                                <h5 class="recipe-time"> Total time: {{ recipe.total_time }} </h5>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +137,7 @@
                         <hr>
                     </div>
                 </div>
-            </class>
+            </div>
         </div>
     </div>
 </div>

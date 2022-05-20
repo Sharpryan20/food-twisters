@@ -7,7 +7,8 @@
         {% if recipe_list|length == 0 %}
         <div class="catergory_recipe-text">
             <p class="text-center">There are no recipes yet.</p>
-            <p class="text-center">Be the first to create a recipe! <a class="btn create-btn cr-create-btn" href="{% url 'create_recipe' %}" role="button"><i class="fas fa-plus"></i></a></p>
+            <p class="text-center">Be the first to create a recipe! <a class="btn create-btn cr-create-btn"
+                    href="{% url 'create_recipe' %}" role="button"><i class="fas fa-plus"></i></a></p>
         </div>
         {% else %}
         <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
@@ -19,7 +20,8 @@
                 <div class="image-container">
                     {% if "placeholder" in recipe.featured_image.url %}
                     <img class="card-img-top"
-                        src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg" alt="loaf-of-bread">
+                        src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg"
+                        alt="loaf-of-bread">
                     {% else %}
                     <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
                     {% endif %}

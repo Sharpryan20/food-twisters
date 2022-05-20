@@ -630,6 +630,12 @@ body {
     .commented-user {
         font-size: 15px;
     }
+    .recipe-ingredients-title,
+    .recipe-instructions-title,
+    .recipe-time-title,
+    .serving-title {
+        font-size: 28px;
+    }
 
     /* Login/out Signup Queries */
     .login-title, .logout-title, .signup-title {

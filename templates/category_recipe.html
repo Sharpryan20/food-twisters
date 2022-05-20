@@ -11,10 +11,10 @@
                     href="{% url 'create_recipe' %}" role="button"><i class="fas fa-plus"></i></a></p>
         </div>
         {% else %}
+        <h1 class="category-title">
+            {{ category.title }}
+        </h1>
         <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-            <h1 class="category-title">
-                {{ category.title }}
-            </h1>
             {% for recipe in recipe_list %}
             <div class="post-banner">
                 <div class="image-container">

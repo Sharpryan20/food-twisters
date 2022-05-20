@@ -517,6 +517,7 @@ body {
     }
     .dropdown-nav {
         margin-top: 8%;
+        margin-left: 40%;
     }
     /* signout queries */
     .signout-img, .login-img, .signup-image {

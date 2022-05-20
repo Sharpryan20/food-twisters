@@ -21,7 +21,7 @@
                     <img class="card-img-top"
                         src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg" alt="loaf-of-bread">
                     {% else %}
-                    <img class="card-img-top" src=" {{ recipe.featured_image.url }}">
+                    <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
                     {% endif %}
                 </div>
                 <div class="recipe-info">

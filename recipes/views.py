@@ -69,12 +69,6 @@ class RecipeDetail(View):
             },
         )
 
-# class Index(View):
-
-#     def get(self, request):
-#         """ Return homepage """
-#         return render(request, 'index.html')
-
 
 def index(request):
     """View to see index page"""

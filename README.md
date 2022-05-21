@@ -29,6 +29,20 @@
      * [**Existing Features**](#exisiting-features)
      * [**Features to implement in the future**](#features-to-implement-in-the-future)
 * [**Issues and Bugs**](#issues-and-bugs)
+* [**Technologies Used**](#technologies-used)
+     * [**Main Languages**](#main-languages-used)
+     * [**Additional Languages**](#additional-languages-used)
+     * [**Frameworks, Libraries and Programes**](#frameworks-libraries--programs-used)
+* [**Testing**](#testing)
+    * [**User Stories**](#user-stories-1)
+    * [**Manual Testing**](#manual-testing)
+        * [**Common Elements Testing**](#common-elements-testing)
+        * [**Page Testing**](#page-testing)
+    * [**Automated Testing**](#automated-testing)
+        * [**Code Validation**](#code-validation)
+        * [**User Testing**](#user-testing)
+        * [**Broswer Validation**](#browser-validation)
+
  
 # **Introduction**
 
@@ -46,7 +60,7 @@ This site is a community platform in the form of a blog post where users can int
 1. As a Site User I can look through a paginated list of recipes so that I can select a recipe that looks good to make.
 2. As a site user/admin I can see the date a post was made so that I can keep up with the latest cooking trends.
 3. As a Site user I can click and load up other users' recipes so that expand my cooking knowledge.
-4. As a site user I can change my password so that I can ensure the protection of my account.
+4. As a site user I can change my password so that I can ensure the protection of my account. (Wasn't implemented in the final release as I ran out of time for the project. I do intend to add it in the future after grading is complete).
 5. As a site user I can upload a recipe so that I can share my ideas with other users.
 6. As a Site user I can upload images with my recipes so that other users can see what the recipe will make.
 7. As a Site User/Admin I can see the number of likes and comments so that I can keep up with the conversation.
@@ -57,7 +71,7 @@ This site is a community platform in the form of a blog post where users can int
 12. As a Site user I can see my login status so that I know if I am logged in or not.
 13. As a Site User I can like and unlike posts/comments so that I can interact with the content.
 14. As a Site User / Admin I can create, read, update and delete posts so that I can manage my blog content.
-15. As a Site User I can create drafts of potential posts so that change and post them at a later date.
+15. As a Site User I can create drafts of potential posts so that change and post them at a later date. (Wasn't implemented in the final release as I ran out of time for the project. I do intend to add it in the future after grading is complete).
 
 ### **Admin**
 1. As an Admin I can filter, search and delete posts so that I can manage my website content.
@@ -266,3 +280,85 @@ Each page of the website features a consistent responsive navigational system:
      - GitHub was used to store the project after pushing
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used to see responsive design throughout the process and to generate mockup imagery to be used.
+
+## **Testing**
+
+### **User Stories**
+1. As a Site User I can look through a paginated list of recipes so that I can select a recipe that looks good to make.
+    - If the amount of recipes of recipe page exceed the number of six then the remainder, starting with the oldest post, will be moved onto the next page. This will continue until there are six or less recipe cards on the front page.
+2. As a site user/admin I can see the date a post was made so that I can keep up with the latest cooking trends.
+    - On recipe detail page below the image of the recipe, it shows the user when the post was uploaded and who it was uploaded by.
+3. As a Site user I can click and load up other users' recipes so that expand my cooking knowledge.
+    - On each recipe card on the recipe page it tells the user the name of the recipe and who uploaded it. If the user clicks on the title then they will be directed to recipe detail page where they will get all the information about that recipe.
+4. As a site user I can upload a recipe so that I can share my ideas with other users. 
+    - There is a separate page on the website that users can click on to which they will then have to fill out a form and submit it before it gets published.
+5. As a Site user I can upload images with my recipes so that other users can see what the recipe will make.
+    -  Once a recipe has been uploaded by a user the image they selected will be the face of the recipe card and on the recipe detail page. If they don't choose an image with their recipe then a placeholder is provided.
+6. As a Site User/Admin I can see the number of likes and comments so that I can keep up with the conversation.
+    - Next to the like button there is a number which indicates how many likes the recipe has gotten. (Should be noted that there is no number count for the amount of comments on the recipe. I ran out of time for the project before I could implement it)
+7. As a Site User I can keep my account login information hidden so that my account will be restricted to just me.
+    - When creating an account and filling out the password, the password is protected by asteriks. Users can also log out to prevent anyone using their account.
+8. As a Site User I can sign in and out of my account so that I can protect my account when I am not using it. 
+    - there are separate pages for logging in and out on.
+9. As a Site User I can create and maintain an account so that I can create my own post and interact with others.
+    - The user is able to create an account and manage all of their own posts on the user recipe page which can be accessed through the recipe page.
+10. As a Site user I can comment on posts so that I can interact with the content.
+    - Underneath the image and recipe info on recipe detail is a comment section which showcases all comments made on the recipe and a comment form which can only be accessed by registered users.
+11. As a Site user I can see my login status so that I know if I am logged in or not.
+    - The user will know if they are logged in because of the navigation bar it will tell them to logout rather than login. When logged in users use the home page the main title on the page greets them with the username that they selected when ccreating the account.
+12. As a Site User I can like and unlike posts/comments so that I can interact with the content.
+    - A user that is registered and logged in has the ability to like and unlike a recipe on the recipe detail page.
+13. As a Site User / Admin I can create, read, update and delete posts so that I can manage my blog content.
+    - Both admin and user can create, read and update posts on the site.
+
+### **Manual Testing**
+
+#### **Common Elements Testing**
+
+- Navigation works on every page.
+- All social links in the footer open a new page following the correct link.
+
+#### **Page Testing**
+
+- Once logged in, the navigation login changes to logout.
+- Links to Create recipe and Recipe page on the home page work/
+- All recipe cards have clickable links which direct the r=users to the recipe detail page featuring all the information they need. 
+- the plus button on the recipe page will send users to the create recipe page and works how it is supposed to.
+- The 'click here' link on the recipe page that is available to logged in users works and take them to user-recipe page which shows only their ecipes.
+- The edit and delete buttons that are available to a user if they are logged in and are the one who created the recipe all work and will direct them to the correct page.
+- The comment form and submit button work and once submitted an alert pops up where the comment form was to tell users their comment has been published.
+- The login, logout and signup pages work with no issues.
+- The categories when clicked will direct users to the correct page.
+- All pages are responsive and are styled for large medium and small screens.
+
+### **Automated Testing**
+
+#### **Code Validation**
+
+The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Validator Site") service was used to validate the `HTML` and `CSS` code used. The [PEP8 Python Validator](http://pep8online.com/ "Link to the PEP8 Python Validator Site") was used to validate the `Python` code used.
+
+- HTML pages - Code Validation - all HTML pages clear.
+
+- CSS Stylesheet - CSS tested with no errors.
+
+Python files tested where:
+- recipes - admin.py
+- recipes - apps.py
+- recipes - forms.py
+- recipes - models.py
+- recipes - urls.py
+- recipes - views.py
+- food_twisters - settings.py
+- food_twisters - urls.py
+
+All those files tested clear.
+
+#### **User Testing** 
+
+I asked the people on slack to test my project multiple times and each time I listened to any problems that arised and adjusted them.
+
+I also asked many family and friends to test it too on different devices and different browsers and again adjusted anything that wasn't giving them the best experience.
+
+#### **Browser Validation**
+
+I tested my project on both chrome and safari.

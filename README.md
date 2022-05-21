@@ -142,3 +142,26 @@ After doing research on what other food based websites there where I came to the
 ![ColourScheme](media/readme-images/colour-palette.png)
 
 I typically used the lighter browns and greys for the primary colours on the web page. I tried to keep it as cosistent as possible throughtout the entire website. the darker shades of both colours were typically used for hover effects so it was clear to the user that they could interact with what they were hovering over.
+
+#### **Logo**
+
+I wanted the logo to be the main focus of the entire website. So because of that reason I styled it differently to mostly every other text on the page. The logo, which is situated on the Nav Bar is a different colour, font and size to the rest of the navigation bar. The logo also acts as a link to take the user back to the home page.
+
+#### **Typography**
+
+There are a lot of different fonts that were used throughout the project. Depsite the fact that a lot were used, there were similarities within most of them. Like previously stated, I wanted the logo to be the centerpiece so I picked 'Inspiration' which gave it the flare it needed.
+
+I wanted the user to have a clear understanding of the different sections of the website and I achieved that by separating the sections up with different fonts. 
+
+The font for the body which is used prodominetaly throughout the site is Hubballi.
+
+Here is the full list of all the fonts used:
+- Grape Nuts 
+- Hubballi 
+- Inspiration 
+- Kavoon 
+- Orelega One 
+- Roboto Condensed
+- Square Peg
+
+All fonts where selected from Google Fonts.

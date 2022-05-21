@@ -87,7 +87,7 @@ class CategoryRecipe(View):
     def get(self, request, slug, *args, **kwargs):
         category = get_object_or_404(Category, slug=slug)
         queryset = Recipe.objects.filter(
-            category__slug=slug).order_by('-created_on')
+            category__slug=slug, status=1).order_by('-created_on')
         context = {
             'recipe_list': queryset,
             'category': category

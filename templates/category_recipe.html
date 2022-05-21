@@ -3,7 +3,7 @@
 {% block content %}
 
 <section>
-    <div class="container">
+    <div class="container-fluid">
         {% if recipe_list|length == 0 %}
         <div class="catergory_recipe-text">
             <p class="text-center">There are no recipes yet.</p>
@@ -14,28 +14,36 @@
         <h1 class="category-title">
             {{ category.title }}
         </h1>
-        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-            {% for recipe in recipe_list %}
-            <div class="post-banner">
-                <div class="image-container">
-                    {% if "placeholder" in recipe.featured_image.url %}
-                    <img class="card-img-top"
-                        src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg"
-                        alt="loaf-of-bread">
-                    {% else %}
-                    <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
-                    {% endif %}
-                </div>
-                <div class="recipe-info">
-                    <a href="{% url 'recipe_detail' slug=recipe.slug %}" class="recipe-link">
-                        <h2 class="card-title">{{ recipe.title }}</h2>
-                    </a>
-                    <div class="image-flash">
-                        <p class="author">Uploaded by: {{ recipe.author }}
+        {% for recipe in recipe_list %}
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="card mb-4">
+                <div class="post-banner">
+                    <div class="image-container">
+                        {% if "placeholder" in recipe.featured_image.url %}
+                        <img class="card-img-top recipe-image"
+                            src="https://res.cloudinary.com/dvgol9ade/image/upload/v1647892595/static/french-style-country-loaf_xejbox.jpg"
+                            alt="loaf-of-bread">
+                        {% else %}
+                        <img class="card-img-top recipe-image" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
+                        {% endif %}
+                    </div>
+                    <div class="recipe-info">
+                        <a href="{% url 'recipe_detail' slug=recipe.slug %}" class="recipe-link">
+                            <h2 class="card-title">{{ recipe.title }}</h2>
+                        </a>
+                        <div class="image-flash">
+                            <p class="author">Uploaded by: {{ recipe.author }}
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        {% if forloop.counter|divisibleby:3 %}
+        </div>
+        <div class="row">
+            {% endif %}
             {% endfor %}
+        
         </div>
         {% endif %}
     </div>

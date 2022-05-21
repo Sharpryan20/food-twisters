@@ -17,6 +17,8 @@
   * [**Oppourtunities**](#oppourtunities)
      * [**Scope**](#scope)
   * [**Structure**](#structure)
+     * [**Database Schema**](#database-schema)
+     * [**Skeleton**](#skeleton)
  
 # **Introduction**
 
@@ -130,3 +132,13 @@ All wireframe mockups were created using Balsamiq.
 ![Wireframe1](media/readme-images/wireframe.png)
 ![Wireframe2](media/readme-images/wireframe2.png)
 ![Wireframe3](media/readme-images/wireframe3.png)
+
+### **Design**
+
+#### **Colour Scheme**
+
+After doing research on what other food based websites there where I came to the conclusion the best colour scheme would be simple. a lot of other websites go very simplistic with their colour scheme so I decided to do the same. I stuck with a plain white background because I didn't want to take too much focus off from the features of the website. I also used a lot of different shades of browns and dark-greys. 
+
+![ColourScheme](media/readme-images/colour-palette.png)
+
+I typically used the lighter browns and greys for the primary colours on the web page. I tried to keep it as cosistent as possible throughtout the entire website. the darker shades of both colours were typically used for hover effects so it was clear to the user that they could interact with what they were hovering over.

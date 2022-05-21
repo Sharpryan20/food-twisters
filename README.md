@@ -19,6 +19,11 @@
   * [**Structure**](#structure)
      * [**Database Schema**](#database-schema)
      * [**Skeleton**](#skeleton)
+  * [**Design**](#design)
+     * [**Colour Scheme**](#colour-scheme)
+     * [**Logo**](#logo)
+     * [**Typography**](#typography)
+     * [**Imagery**](#imagery)
  
 # **Introduction**
 
@@ -165,3 +170,11 @@ Here is the full list of all the fonts used:
 - Square Peg
 
 All fonts where selected from Google Fonts.
+
+#### **Imagery**
+
+To match my colour scheme of brown, white and grey, I largely chose all of my images based on them. The hero image of the index page. 
+
+Also on the index page there are two anchor tags with the text 'make a recipe' and 'see recipes'. Behind each of them are images. the image used for the 'make a recipe' Is a bunch of eggs and flour which represents the making of a product (A recipe). Behind the 'see recipes' is an image of different produces (mainly bread). This represents a finished product, which is like the user clicking to see the finished recipe. 
+
+For the logout and signup pages I chose images to represent what the page is. For instance the signup image is a welcome sign, as if welcoming the new user to the website. The logout image features a closed sign signalling a goodbye to the user. 

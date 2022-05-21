@@ -178,3 +178,40 @@ To match my colour scheme of brown, white and grey, I largely chose all of my im
 Also on the index page there are two anchor tags with the text 'make a recipe' and 'see recipes'. Behind each of them are images. the image used for the 'make a recipe' Is a bunch of eggs and flour which represents the making of a product (A recipe). Behind the 'see recipes' is an image of different produces (mainly bread). This represents a finished product, which is like the user clicking to see the finished recipe. 
 
 For the logout and signup pages I chose images to represent what the page is. For instance the signup image is a welcome sign, as if welcoming the new user to the website. The logout image features a closed sign signalling a goodbye to the user. 
+
+# **Features** 
+
+## **Design Features**
+
+Each page of the website features a consistent responsive navigational system:
+
+- The header contains the logo of the website in the center of the navigation bar. This will also redirect users back to the home page once clicking on it. On smaller screens, everything but the logo is condensed down into a dropdown menu which provides users with the same navigation. I chose a dropdown because I think it works better and is more presentable on smaller devices. On the far right of the navigation bar the user is presented with either 'login' or 'logout' depending on if the have an account they are logged into.
+
+- The footer is intentionally simple to keep up with the simplicity of the rest of the site. It contains social network links with text above it which reads 'want to find out more?' with a copyright next to it.
+
+## **Exisiting Features**
+
+- Navigation bar which is featured on every page throughout the site to allow users easy access should they want to go to a different page.
+- Social icons which appear on the footer of every page.
+- Recipe cards which appear on the recipes page, the recipe cards only give out the title of the recipe and the user who uploaded it, this is to not make it overcomplicated and to the user.
+- Recipe form on the create page which is only available to users that are registered and logged in. Unregistered users are able to go onto the create page but they will just be shown a message prompting them to signup or log in.
+- Personal recipes created only by the user logged in will be found in my recipes which can be located by clicking 'click here' on the recipes page. The users will be taken to a separate page where recipe cards of their own recipes are shown.
+- Comment form which appears on the recipe detail page which is accessible by clicking on a recipe that they want. the comment form however only shows up for registered users. Unregistered users can see comments left by other users though. Once a user has submitted a comment the page will reload and when they scroll down an alert message where the comment form once was saying the comment has been published and underneath the comment will appear. 
+- There is a like button situated next to the information of who the author of the recipe is and when it was uploaded on in recipe detail. It is in the shape of the heart and beside it is a number which shows the number of likes that specific recipe has. If the user has liked the recipe but changed their mind, all they would need to do is click on the heart again to unlike it. 
+- The home page is really just a welcoming page for the user. They are greeted personally with the first header on the page which will include the username that they signed up with. The home page does feature some functionality to the website though. It has links which will direct users to either the create page or the recipe page. Below both of them is a contact box the users can find out information including an contact number, email address and an address.
+- The recipe page is a few functions. First off the user can see a plus button right next to the Title. If clicked the user will be directed to the create page. Beneath that there will be one of two sentences. If the user is logged in then they will have a click here button which will take them to a page of just there recipes. If they aren't they will have a message promtping them to log in so they can see their own recipes. Below all that there will be recipe cards of all recipes that all users on the site have made. registered and unregistered users have full access to them.
+- The edit/delete buttons are only available to the users that are logged in and are the creator of the recipe. The buttons are found underneath the recipe information on the recipe detail page.
+- Sign in page which is designed to allow a user to log in if already registered. If they are not then there is a link to take them to the signup page.
+- Sign out page is designed to allow users to log out of their account. If the user does sign out then they will be redirected to the home page.
+- Sign up page is designed to allow new useres to create an account which will give them more access to the site. They will create their profile with a username, password that needs to be repeated to ensure is correct and an optional email address if the user would like to. 
+
+## **Features to Implement in the future**
+
+- A personal profile page for all users where all their recipes, favourites, drafts are shown on one page.
+- The ability for a user to favourite/save a recipe they like and want to use in the future which they can access through its own page.
+- For each recipe to have the option to showcase nutritional values and publicily show them if they know and want to share them.
+- The ability to for a user to create a draft and save it on their own profile so they can go back to at a later date.
+- To allow a user to delete their own comments if they so wish to. (Wasn't implemented in release as I ran out of time with the project)
+- To allow images to be uploaded with a users comment.
+- The addition of a search bar either on the navigation bar or on the recipes page so users can limit the amount of recipes they have to scroll through to find one that they had in mind. (Wasn't in the inital release due to lack of time. I do intend to implement this in the project after the grading is completed)
+- The ability to add other users as friends and private messages so they can send recipes if they didn't want to do it publicly.

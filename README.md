@@ -24,6 +24,11 @@
      * [**Logo**](#logo)
      * [**Typography**](#typography)
      * [**Imagery**](#imagery)
+* [**Features**](#features)
+     * [**Design Features**](#design-features)
+     * [**Existing Features**](#exisiting-features)
+     * [**Features to implement in the future**](#features-to-implement-in-the-future)
+* [**Issues and Bugs**](#issues-and-bugs)
  
 # **Introduction**
 
@@ -215,3 +220,49 @@ Each page of the website features a consistent responsive navigational system:
 - To allow images to be uploaded with a users comment.
 - The addition of a search bar either on the navigation bar or on the recipes page so users can limit the amount of recipes they have to scroll through to find one that they had in mind. (Wasn't in the inital release due to lack of time. I do intend to implement this in the project after the grading is completed)
 - The ability to add other users as friends and private messages so they can send recipes if they didn't want to do it publicly.
+
+## **Issues and Bugs**
+
+*Bug* - I had a few problems with summernote not working on the actual website despite it working perfectly on the admin page. At first it wasn't even loading on the website so I had to find a solution:
+- My first issue with summernote was it not loading onto the website. The *solution* for this was to add '| safe' after loading it in.
+- My second issue that I faced was on smaller screens sizes the summernote wouldn't fit on the screen like the rest of the form did. The solution for this was to add in summernote_config into setting.py and from there I was able to change the width, height and what I actually wanted on the summernote that users could access.
+
+*Bug* I faced an issue when deploying my project to heroku with my CSS not loading in:
+- The solution for this was to turn debug = True to False.
+
+*Bug* When creating a template, view and url path for category.html I kept facing an issue where it would throw an error when trying to load the sight. I looked on slack to see if I could find anyone with the same issue and I did but for some reason their solutions wasn't working for me:
+- The solution for this bug was I contacted tutor support and we found out that I need to do a data refresh on my browser. It was more than just a hard refrsh of the site, I had to go into my google seetings and reset the data for it. After that it worked.
+
+*Issue* I found on issue with the urls in settings.py which threw an error when validating due to the character line being too long but there is no way to reduce.
+
+## **Technologies Used**
+
+### Main Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
+
+### Additional Languages Used
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Link to Python Wiki")
+     - Used to implement Django functionality, including building models, forms and views for the app.
+
+### Frameworks, Libraries & Programs Used
+- [Django](https://www.djangoproject.com/ "Link to Django Project website")
+    - Django was used to build the models, forms and views of the app, and was the backbone of this project.
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/ "Link to Bootstrap page")
+     - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
+- [Cloudinary](https://cloudinary.com/ "Link to Cloudinary page")
+     - Cloudinary was used as free cloud storage for images uploaded to the site through the recipe forms.
+- [Summernote](https://summernote.org "Link to Summernote page")
+     - Summernote was used to allow users to add styling when adding a recipe to the site. This is particularly useful for using bullet points for ingredients or numbering the steps for the recipe.
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/ "Link to the Crispy Forms documentation")
+    - Crispy Forms was used to style the add and edit recipe forms, allowing more than one field to occupy a line on the form.
+- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
+    - Google fonts were used to import the fonts "Poppins" and "Dancing Script" into the style.css file. These fonts were used throughout the project.
+- [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
+     - Font Awesome was used on all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
+- [Git](https://git-scm.com/ "Link to Git homepage")
+     - Git was used for version control by utilizing the GitPod terminal to commit to Git and push to GitHub.
+- [GitHub](https://github.com/ "Link to GitHub")
+     - GitHub was used to store the project after pushing
+- [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
+     - Am I Responsive was used to see responsive design throughout the process and to generate mockup imagery to be used.

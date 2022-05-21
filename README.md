@@ -44,6 +44,11 @@
         * [**Broswer Validation**](#browser-validation)
 * [**Deployment**](#deploymemt)
     * [**Deploying to Heroku**](#deploying-on-heroku)
+* [**Credits**](#credits)
+    * [**Content**](#content)
+    * [**Media**](#media)
+    * [**Code**](#code)
+    * [**Acknowledgements**](#acknowledgements)
 
  
 # **Introduction**
@@ -200,6 +205,8 @@ Also on the index page there are two anchor tags with the text 'make a recipe' a
 
 For the logout and signup pages I chose images to represent what the page is. For instance the signup image is a welcome sign, as if welcoming the new user to the website. The logout image features a closed sign signalling a goodbye to the user. 
 
+[Back to top ⇧](#food-twisters)
+
 # **Features** 
 
 ## **Design Features**
@@ -237,6 +244,8 @@ Each page of the website features a consistent responsive navigational system:
 - The addition of a search bar either on the navigation bar or on the recipes page so users can limit the amount of recipes they have to scroll through to find one that they had in mind. (Wasn't in the inital release due to lack of time. I do intend to implement this in the project after the grading is completed)
 - The ability to add other users as friends and private messages so they can send recipes if they didn't want to do it publicly.
 
+[Back to top ⇧](#food-twisters)
+
 ## **Issues and Bugs**
 
 *Bug* - I had a few problems with summernote not working on the actual website despite it working perfectly on the admin page. At first it wasn't even loading on the website so I had to find a solution:
@@ -250,6 +259,8 @@ Each page of the website features a consistent responsive navigational system:
 - The solution for this bug was I contacted tutor support and we found out that I need to do a data refresh on my browser. It was more than just a hard refrsh of the site, I had to go into my google seetings and reset the data for it. After that it worked.
 
 *Issue* I found on issue with the urls in settings.py which threw an error when validating due to the character line being too long but there is no way to reduce.
+
+[Back to top ⇧](#food-twisters)
 
 ## **Technologies Used**
 
@@ -282,6 +293,8 @@ Each page of the website features a consistent responsive navigational system:
      - GitHub was used to store the project after pushing
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used to see responsive design throughout the process and to generate mockup imagery to be used.
+
+[Back to top ⇧](#food-twisters)
 
 ## **Testing**
 
@@ -365,6 +378,8 @@ I also asked many family and friends to test it too on different devices and dif
 
 I tested my project on both chrome and safari.
 
+[Back to top ⇧](#food-twisters)
+
 ## **Deploymemt**
 
 This project was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal.
@@ -404,3 +419,24 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     - Log in to Heroku using the terminal heroku login -i.
     - Then run the following command: **heroku git:remote -a your_app_name_here** and replace your_app_name_here with the name of your Heroku app. This will link the app to your Gitpod terminal.
     - After linking your app to your workspace, you can then deploy new versions of the app by running the command **git push heroku main** and your app will be deployed to Heroku.
+    
+## **Credits**
+
+### **Content**
+- Most recipes were created for my site were taken from [BBC GoodFood](https://www.bbcgoodfood.com/ "Link BBC GoodFood website")'.
+
+### **Media** 
+- Most images that were used on the site were taken from [Pexels](https://www.pexels.com/royalty-free-images/)
+
+### **Code**
+References used:
+- [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
+- [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
+- [Summernote GitHub Docs](https://github.com/summernote/summernote, "Link to Summernote's GitHub page")
+
+## **Acknowledgements** 
+
+- I would like to thank everyone in the slack community for their incredible support over the last couple of months with my and my project. I would personally like to thank JoGorska, DavidHorrocks and ShellieDownie for their incredible support and each taking time out of their day to help me.
+- Everyone over at tutor support for helping me get through some of the toughest problems I have faced in the project. 
+
+[Back to top ⇧](#food-twisters)
